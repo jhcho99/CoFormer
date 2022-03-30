@@ -1,0 +1,11 @@
+cython
+submitit
+torch>=1.8.0
+torchvision>=0.9.0
+scipy
+scikit-image
+onnx
+onnxruntime
+opencv-python>=4.2.0.32
+pandas
+nltk
