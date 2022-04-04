@@ -118,6 +118,25 @@ python run_with_submitit.py --ngpus 4 --nodes 1 --job_dir CoFormer \
     - Those learning rates are divided by 10 at epoch 30.
 - Random Color Jittering, Random Gray Scaling, Random Scaling and Random Horizontal Flipping are used for augmentation.
 
+## Evaluation
+To evaluate CoFormer on the dev set with the saved model, run:
+```bash
+python main.py --saved_model CoFormer_checkpoint.pth --output_dir CoFormer --dev
+```
+To evaluate CoFormer on the test set with the saved model, run:
+```bash
+python main.py --saved_model CoFormer_checkpoint.pth --output_dir CoFormer --test
+```
+- Model checkpoint can be downloaded [here](https://github.com/jhcho99/CoFormer).
+
+## Inference
+To run an inference on a custom image, run:
+```bash
+python inference.py --image_path inference/filename.jpg \
+                    --saved_model CoFormer_checkpoint.pth \
+                    --output_dir inference
+```
+
 ## Results
 We provide several experimental results.
 

@@ -137,8 +137,9 @@ class CoFormer(nn.Module):
         # outputs
         out = {}
         out['pred_verb'] = torch.cat(batch_verb, dim=0)
-        out['pred_noun_1'] = torch.cat(batch_noun_1, dim=0)
-        out['pred_noun_2'] = torch.cat(batch_noun_2, dim=0)
+        if not inference:
+            out['pred_noun_1'] = torch.cat(batch_noun_1, dim=0)
+            out['pred_noun_2'] = torch.cat(batch_noun_2, dim=0)
         out['pred_noun_3'] = torch.cat(batch_noun_3, dim=0)
         out['pred_bbox'] = torch.cat(batch_bbox, dim=0)
         out['pred_bbox_conf'] = torch.cat(batch_bbox_conf, dim=0)
