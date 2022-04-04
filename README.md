@@ -1,5 +1,5 @@
 # [CVPR'22] Collaborative Transformers for Grounded Situation Recognition
-[Paper](https://arxiv.org/abs/2203.16518) | [Model Checkpoint](https://github.com/jhcho99/CoFormer) 
+[Paper](https://arxiv.org/abs/2203.16518) | [Model Checkpoint](https://drive.google.com/u/1/uc?id=1EoJ081eEcfp0u-B1qkkA_EX8U3Ko8P3u&export=download&confirm=t) 
 
 - This is the official PyTorch implementation of [Collaborative Transformers for Grounded Situation Recognition](https://arxiv.org/abs/2203.16518). 
 - **CoFormer** (**Co**llaborative Glance-Gaze Trans**Former**) achieves state-of-the-art accuracy in every evaluation metric on the SWiG dataset.
@@ -127,7 +127,7 @@ To evaluate CoFormer on the test set with the saved model, run:
 ```bash
 python main.py --saved_model CoFormer_checkpoint.pth --output_dir CoFormer --test
 ```
-- Model checkpoint can be downloaded [here](https://github.com/jhcho99/CoFormer).
+- Model checkpoint can be downloaded [here](https://drive.google.com/u/1/uc?id=1EoJ081eEcfp0u-B1qkkA_EX8U3Ko8P3u&export=download&confirm=t).
 
 ## Inference
 To run an inference on a custom image, run:
